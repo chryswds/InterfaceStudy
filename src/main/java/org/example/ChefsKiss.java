@@ -22,6 +22,28 @@ public class ChefsKiss {
         kitchen.add(new IceCream()); // Dessert
 
 
+        //Add 2nd meal
+
+        kitchen.add(new GarlicCheeseBread());
+        kitchen.add(new Chicken());
+        kitchen.add(new IceCream());
+
+
+        //The chef is going to iterate through the list of items
+        //Check if order is part of the course type
+        // If it is then the chef will prepare it
+        //The chef will remove it from the list of pending orders
+        //The chef will serve it to the waiter to take to the table
+
+        while(kitchen.numRemainingOrders()> 0){
+            // as long as the length of the arraylist is bigger than 0
+            // We assume we have more orders to serve
+            System.out.println(kitchen.serveNextMeal().getName());
+        }
+
+
+
+
     }
 
 }
