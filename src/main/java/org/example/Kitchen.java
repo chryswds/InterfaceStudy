@@ -88,6 +88,8 @@ public class Kitchen {
             }
 
         }
+        // If the food is not on the list of courses we return null
+        return null;
 
     }
 

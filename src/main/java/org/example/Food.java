@@ -53,6 +53,18 @@ public class Food {
 
 
 
-    //Take the order from the user
+    //Take the order from the user and send this food to the kithcen as an order
+    //*This* is the most instant  referance to the food class
 
+    //Always i the same order that the attributes have been instantiated
+    //the order the constructor feeds in the information
+    public void order(){
+        kitchen.add(this);
+    }
+
+    //The food has been sent to the kitchen the order is ready to be served
+
+    public void remove(){
+        kitchen.remove(this);
+    }
 }
