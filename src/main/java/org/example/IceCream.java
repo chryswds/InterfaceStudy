@@ -16,6 +16,8 @@ public class IceCream extends Food implements Allergic {
     //Override to get rid of the error
     @Override
     public Allergens[] listAllergens(){
+        //This will return a list of allergens
+        //[DAIRY]
         return ALLERGENS;
     }
 }
