@@ -6,5 +6,8 @@ public interface Allergic {
 
 
 
-    public Allergens[] listAllergens();
+    public Allergens[] listAllergens(); // List of allergens that comes from the allergens enums
+
+
+    //All methods here have no body
 }
