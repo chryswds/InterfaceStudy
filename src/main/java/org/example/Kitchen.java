@@ -56,5 +56,41 @@ public class Kitchen {
         }
     }
 
+    //Once we can check the remaining number of orders
+    //Once we can add foods to the list of orders
+    //Then we have to be able to remove orders that are done
+    public void remove(Food food){
+        orders.remove(food); // This will remove from the list
+    }
+
+    //We are going to serve the next meal for the customer
+    //And once the meal is served we removed that meal from the list
+    public Food serveNextMeal(){
+        //The meal will contain
+        //The meal type
+        for(Courses course : Courses.values()){ // Starter
+            //For each of the enum course types
+            //We check the values
+
+            for(Food food : orders){ // Pancakes
+                //for every food we serve from the food orders
+                //We check the type of the food
+                if (food.getType() == course){ //If pancakes is a STARTER
+                    orders.remove(food);
+                    return food;
+
+                }
+
+                //this way whe chef works through a list of foods
+                //Starting from the Starters, moving towards the main then desserts
+
+
+            }
+
+        }
+
+    }
+
+
 
 }

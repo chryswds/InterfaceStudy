@@ -7,5 +7,5 @@ public enum Courses {
 
     STARTER,
     MAIN,
-    DESERT
+    DESSERT
 }
